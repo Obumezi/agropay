@@ -89,7 +89,7 @@ app.post("*", async (req, res) => {
             Enter secret pin to continue`;
             res.send(response);
         } else if (text === "4*4*0000") {
-            response = `END your request is being processed and your account will be creditedp within 24 hours`;
+            response = `END your request is being processed and your account will be credited within 24 hours`;
             res.send(response);
         } else {
             res.status(400).send("Something Isn't right!");
