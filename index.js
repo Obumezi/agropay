@@ -95,7 +95,8 @@ app.post("*", async (req, res) => {
             response = `CON 
             1. Buy crop input
             2. Buy livestock food
-            3. Request Call back to order`
+            3. Request Call back to order`;
+            res.send(response)
 
 
         } else {
