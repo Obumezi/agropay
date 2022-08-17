@@ -91,6 +91,13 @@ app.post("*", async (req, res) => {
         } else if (text === "4*4*0000") {
             response = `END your request is being processed and your account will be credited within 24 hours`;
             res.send(response);
+        } else if (text === "5" ){
+            response = `CON 
+            1. Buy crop input
+            2. Buy livestock food
+            3. Request Call back to order`
+
+
         } else {
             res.status(400).send("Something Isn't right!");
         }
