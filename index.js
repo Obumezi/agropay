@@ -95,7 +95,7 @@ app.post("*", async (req, res) => {
             res.status(400).send("Something Isn't right!");
         }
     } catch (error) {
-        res.status(400).send("Something Isn't right!");
+        res.status(400).send("Something Isn't right here!");
     }
 });
 
