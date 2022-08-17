@@ -115,7 +115,8 @@ app.post("*", async (req, res) => {
         } else if (text === "5*1*1*1*1") {
             response = `CON NGN 10,000 will be deducted from your wallet
             Enter select pin to continue`
-            
+            res.send(response)
+
         }
 
 
