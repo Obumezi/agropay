@@ -119,7 +119,7 @@ app.post("*", async (req, res) => {
 
         } else if (text === "5*1*1*1*1*0000") {
             response = `END Order confirmed
-            Input will be delivered to local agent within 1 day`
+            Input will be delivered to local your agent within 1 day`
             res.send(response)
 
         }
