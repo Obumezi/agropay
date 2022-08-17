@@ -100,8 +100,27 @@ app.post("*", async (req, res) => {
             1. Farmsquare
             2. Agro Nigerian Venture
             3. Vetgate Agro Services Limited`
+            res.send(response);
+        } else if (text === "5*1*1") {
+            response = `CON Select Category
+            1.Seeds
+            2.Request callback to order`
             res.send(response)
-        } else {
+        } else if (text === "5*1*1*1") {
+            response = `CON Select Ceategory
+            1. Seeds
+            2. Request callback to order`
+            res.send(response)
+        } else if (text === "5*1*1*1*1") {
+            response = `CON select input
+            1. Rice
+            2. Maize
+            3. Barley`
+            res.send(response)
+        }
+
+
+        else {
             res.status(400).send("Something Isn't right!");
         }
     } catch (error) {
