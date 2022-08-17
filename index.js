@@ -71,7 +71,6 @@ app.post("*", async (req, res) => {
             4. 90,000 `;
             res.send(response);
         } else if (text === "3*08033016007") {
-
             let response = `CON Enter amount to pay`;
             res.send(response);
         } else if (text === "3*08033016007*10000") {
@@ -80,10 +79,9 @@ app.post("*", async (req, res) => {
             Enter your 4 digit pin to continue`;
             res.send(response);
         } else if (text === "3*08033016007*10000*0000") {
-            response = `END Payment Successful recepient will receive funds shortly`
-            res.send(response)
-        }
-        else if (text === "4*4") {
+            response = `END Payment Successful recepient will receive funds shortly`;
+            res.send(response);
+        } else if (text === "4*4") {
             //let text = "2000"
             response = `CON Authorize payment of N90,000 to your wallet
             Enter secret pin to continue`;
@@ -91,14 +89,18 @@ app.post("*", async (req, res) => {
         } else if (text === "4*4*0000") {
             response = `END your request is being processed and your account will be credited within 24 hours`;
             res.send(response);
-        } else if (text === "5" ){
+        } else if (text === "5") {
             response = `CON 
             1. Buy crop input
             2. Buy livestock food
             3. Request Call back to order`;
+            res.send(response);
+        } else if (text === "5*1") {
+            response = `CON Select Supplier
+            1. Farmsquare
+            2. Agro Nigerian Venture
+            3. Vetgate Agro Services Limited`
             res.send(response)
-
-
         } else {
             res.status(400).send("Something Isn't right!");
         }
