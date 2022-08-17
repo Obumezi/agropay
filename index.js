@@ -107,17 +107,12 @@ app.post("*", async (req, res) => {
             2.Request callback to order`
             res.send(response)
         } else if (text === "5*1*1*1") {
-            response = `CON Select Ceategory
-            1. Seeds
-            2. Request callback to order`
-            res.send(response)
-        } else if (text === "5*1*1*1*1") {
             response = `CON select input
             1. Rice
             2. Maize
             3. Barley`
             res.send(response)
-        }
+        } 
 
 
         else {
